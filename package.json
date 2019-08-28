@@ -1,12 +1,31 @@
 {
   "name": "use-sync-state",
-  "version": "1.0.2",
-  "main": "index.js",
+  "version": "1.1.2",
+  "main": "lib/index.js",
+  "description": "use-sync-state",
   "repository": "git@github.com:liurongqing/useSyncState.git",
   "author": "liurongqing <phpgege@163.com>",
-  "keywords": ["use sync state", "useSyncState", "useState"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "use sync state",
+    "useSyncState",
+    "useState"
+  ],
   "license": "MIT",
   "dependencies": {
-    "react": "^16.9.0"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "typescript": "^3.5.3"
   }
 }
